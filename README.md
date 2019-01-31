@@ -5,8 +5,9 @@ I've bundled all neccessary libraries in this repo.
 
 *How to reproduce*
 
-if you run `compile-3.13.0.jar` it will compile fine.
-if you run `compile-3.16.0.jar` it will fail:
+if you run `compile-3.13.0.bat` it will compile fine.
+if you run `compile-3.16.0.bat` it will fail
+(for linux run: `java -jar ecj-3.16.0.jar -source 1.8 -target 1.8 -d none -warn:none -cp libs/jsr305-3.0.2.jar:libs/querybean-generator-11.27.1.jar:libs/persistence-api-2.2.1.jar:libs/ebean-querybean-11.32.1.jar:libs/ebean-11.32.1.jar src/`)
 
 ```
 java.lang.NullPointerException
@@ -52,3 +53,5 @@ public class Finder {
 
 }
 ```
+
+
